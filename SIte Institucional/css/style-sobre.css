@@ -1,0 +1,33 @@
+.sobre {
+    border-radius: 10px;
+    border: 2px solid rgb(131, 111, 255);
+    width: 800px;
+    margin-top: 50px;
+    padding: 20px;
+    float: left;
+}
+
+.titulo-sobre {
+    float: left;
+    color: rgb(85, 26, 139);
+    font-weight: bolder;
+}
+
+.texto-sobre{
+    float: left;
+    text-align: justify;
+    color: rgb(155, 48, 255)
+}
+
+h1 {
+    width: 500px;
+}
+
+h4 {
+    width: 500px;
+}
+
+.foto {
+    float: left;
+    margin-left: 40px;
+}
