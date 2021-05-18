@@ -158,41 +158,28 @@ h1 {
 /*FOOTER*/
 .footer .container {
     background-color: rgb(162, 181, 205);
-    height: 160px;
+    height: 100px;
     border-top: 4px solid rgb(131, 111, 255)/*rgb(255, 127, 0)*/;
     padding: 0;
     margin: 0;
     margin-top: 390px;
 }
 
-.texto-footer {
+.redes-sociais {
     float: left;
-    margin-left: 80px;
-}
-
-.btn-insta {
-    background-color: rgb(162, 181, 205);
-    color: rgb(23, 10, 109);
-    border-radius: 5px;
-}
-
-.btn-insta a:hover {
-    background-color: rgb(23, 10, 109);
-    color: white;
-}
-
-.btn-insta:hover {
-    background-color: rgb(23, 10, 109);
-    color: rgb(24, 22, 22);
+    width: 150px;
+    margin: 30px;
 }
 
 .logo-footer {
-    width: 30%;
     float: right;
+    width: 200px;
+    margin-right: 10px;
 }
 
 .direitos-footer {
-    text-align: center;
+    margin-left: 410px;
     font-size: 6px;
-    margin-top: 140px;
+    float: left;
+    margin-top: 70px;
 }
