@@ -1,0 +1,21 @@
+.login { 
+    border-radius: 10px; 
+    border: 2px solid rgb(131, 111, 255); 
+    width: 500px; 
+} 
+
+.login .container { 
+    display: flex; 
+    align-content: center; 
+    margin: auto; 
+} 
+
+.titulo-login { 
+} 
+
+ 
+ 
+
+.texto-login { 
+    width: 400px; 
+} 

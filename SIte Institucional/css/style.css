@@ -1,185 +1,193 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: whitesmoke;
-    padding: 0;
+* { 
+    font-family: Arial, Helvetica, sans-serif; 
+    padding: 0; 
+    margin: 0; 
+} 
+
+body { 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center; 
+    height: 100vh; 
+} 
+
+/*CABEÇALHO*/ 
+
+.header { 
+    background-color: rgb(162, 181, 205); 
+    height: 100px; 
+    border-bottom: 4px solid rgb(131, 111, 255)/*rgb(255, 127, 0)*/; 
+    width: 100%; 
+} 
+
+.logo-header { 
+    width: 20%; 
+    margin-left: 60px; 
+    float: left; 
+} 
+
+a { 
+    text-decoration: none; 
+} 
+
+.header ul { 
+    list-style-type: none; 
+    float: right; 
+    margin-top: 45px; 
+} 
+
+.header li { 
+    float: left; 
+    margin-left: 18px; 
+} 
+
+.header a { 
+    text-transform: uppercase; 
+    color: rgb(0, 0, 139); 
+} 
+
+.header a:hover { 
+    font-weight: bold; 
+} 
+
+.nav ul { 
+    width: 30%; 
+} 
+
+/*BANNER*/ 
+
+.banner { 
+    height: 400px; 
+    width: 100%; 
+    background: url(../img/banner2.jpg); 
+    opacity: 0.8; 
+    background-size: cover; 
+} 
+
+.banner .container { 
+    height: 60%; 
     margin: 0;
+    padding: 0; 
+} 
+
+.banner .titulo { 
+    font-size: 30px; 
+    text-align: center; 
+    color: whitesmoke; 
+    font-weight: bolder; 
+    padding-top: 90px; 
+} 
+
+.banner .texto { 
+    font-size: 24px; 
+    text-align: center; 
+    color: white; 
+    font-weight: bold; 
+    padding-top: 70px; 
+} 
+
+h1 { 
+    padding: 0; 
+    margin: 0; 
+} 
+
+.banner-border { 
+    border-bottom: 30px solid rgb(131, 111, 255); 
+} 
+
+/*BOX 1*/ 
+
+.box1 .container { 
+    background-color: rgb(230, 230, 250); 
+    margin: 40px; 
+    width: 600px; 
+    padding: 30px; 
+    border: 2px solid rgb(131, 111, 255); 
+    border-radius: 10px; 
+    float: left; 
+    margin-left: 90px; 
+}  
+
+.titulo-box { 
+    font-size: 10px; 
+    color: rgb(85, 26, 139); 
+} 
+
+.texto-box { 
+    color: rgb(155, 48, 255); 
+} 
+
+/*BOX 2*/ 
+
+.box2 { 
+    float: left; 
+    padding: 40px; 
+    height: 270px; 
+    width: 400px; 
+    padding: 40px; 
+    border-radius: 10px; 
+    margin-right: 40px; 
+} 
+
+.img-forum { 
+    border: 2px solid rgb(131, 111, 255); 
+    border-radius: 10px; 
+    float: left; 
+    padding: 20px; 
+    padding-top: 38px; 
+    padding-bottom: 38px; 
+} 
+
+.box1 .box2 .border { 
+    border-bottom: 30px solid rgb(131, 111, 255); 
+} 
+
+.btn { 
+    background-color: rgb(131, 111, 255); 
+    font-weight: bolder; 
+    color: rgb(0, 0, 139); 
+    border-radius: 5px; 
 }
 
-/*CABEÇALHO*/
+.btn a:hover { 
+    background-color: rgb(23, 10, 109); 
+    color: white; 
+} 
 
-.header {
-    background-color: rgb(162, 181, 205);
-    height: 100px;
-    border-bottom: 4px solid rgb(131, 111, 255)/*rgb(255, 127, 0)*/;
-    padding: 0;
-    margin: 0;
-}
+.btn:hover { 
+    background-color: rgb(23, 10, 109); 
+} 
 
-.container {
-    padding: 0;
-    margin: auto;
-}
+/*FOOTER*/ 
 
-.logo-header {
-    width: 20%;
-    margin-left: 60px;
-    float: left;
-}
+.footer .container { 
+    background-color: rgb(162, 181, 205); 
+    height: 100px; 
+    border-top: 4px solid rgb(131, 111, 255)/*rgb(255, 127, 0)*/; 
+    padding: 0; 
+    margin: 0; 
+} 
 
-a {
-    text-decoration: none;
-}
+.footer { 
+    width: 100%; 
+} 
 
-.header ul {
-    list-style-type: none;
-    float: right;
-    margin-top: 45px;
-}
+.redes-sociais { 
+    float: left; 
+    width: 150px; 
+    margin: 30px; 
+} 
 
-.header li {
-    float: left;
-    margin-left: 18px;
-}
+.logo-footer { 
+    float: right; 
+    width: 200px; 
+    margin-right: 10px; 
+}  
 
-.header a {
-    text-transform: uppercase;
-    color: rgb(0, 0, 139);
-}
-
-.header a:hover {
-    font-weight: bold;
-}
-
-.nav ul {
-    width: 30%;
-}
-
-/*BANNER*/
-.banner {
-    height: 400px;
-    width: 100%;
-    background: url(../img/banner2.jpg);
-    opacity: 0.8;
-    background-size: cover;
-}
-
-.banner .container {
-    height: 60%;
-    margin: 0;
-    padding: 0;
-}
-
-.banner .titulo {
-    font-size: 30px;
-    text-align: center;
-    color: whitesmoke;
-    font-weight: bolder;
-    padding-top: 90px;
-}
-
-.banner .texto {
-    font-size: 24px;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    padding-top: 70px;
-}
-
-h1 {
-    padding: 0;
-    margin: 0;
-}
-
-.banner-border {
-    border-bottom: 30px solid rgb(131, 111, 255);
-}
-
-/*BOX 1*/
-.box1 .container {
-    background-color: rgb(230, 230, 250);
-    margin: 40px;
-    width: 600px;
-    padding: 30px;
-    border: 2px solid rgb(131, 111, 255);
-    border-radius: 10px;
-    float: left;
-    margin-left: 90px;
-}
-
-.titulo-box {
-    font-size: 10px;
-    color: rgb(85, 26, 139);
-}
-
-.texto-box {
-    color: rgb(155, 48, 255);
-}
-
-/*BOX 2*/
-.box2 {
-    float: left;
-    padding: 40px;
-    height: 270px;
-    width: 400px;
-    padding: 40px;
-    border-radius: 10px;
-    margin-right: 40px;
-}
-
-.img-forum {
-    border: 2px solid rgb(131, 111, 255);
-    border-radius: 10px;
-    float: left;
-    padding: 20px;
-    padding-top: 38px;
-    padding-bottom: 38px;
-}
-
-.box1 .box2 .border {
-    border-bottom: 30px solid rgb(131, 111, 255);
-}
-
-.btn {
-    background-color: rgb(131, 111, 255);
-    font-weight: bolder;
-    color: rgb(0, 0, 139);
-    border-radius: 5px;
-}
-
-.btn a:hover {
-    background-color: rgb(23, 10, 109);
-    color: white;
-}
-
-.btn:hover {
-    background-color: rgb(23, 10, 109);
-}
-
-/*FOOTER*/
-.footer .container {
-    background-color: rgb(162, 181, 205);
-    height: 100px;
-    border-top: 4px solid rgb(131, 111, 255)/*rgb(255, 127, 0)*/;
-    padding: 0;
-    margin: 0;
-    margin-top: 390px;
-}
-
-.redes-sociais {
-    float: left;
-    width: 150px;
-    margin: 30px;
-}
-
-.logo-footer {
-    float: right;
-    width: 200px;
-    margin-right: 10px;
-}
-
-.direitos-footer {
-    margin-left: 410px;
-    font-size: 6px;
-    float: left;
-    margin-top: 70px;
-}
+.direitos-footer { 
+    margin-left: 410px; 
+    font-size: 6px; 
+    float: left; 
+    margin-top: 70px; 
+} 
