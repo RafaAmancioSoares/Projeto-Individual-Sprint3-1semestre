@@ -17,7 +17,7 @@ body {
 .header { 
     background-color: rgb(162, 181, 205); 
     height: 100px; 
-    border-bottom: 4px solid rgb(131, 111, 255)/*rgb(255, 127, 0)*/; 
+    border-bottom: 4px solid rgb(131, 111, 255); 
     width: 100%; 
 } 
 
@@ -60,13 +60,14 @@ a {
 .banner { 
     height: 400px; 
     width: 100%; 
+    display: flex;
     background: url(../img/banner2.jpg); 
     opacity: 0.8; 
     background-size: cover; 
 } 
 
 .banner .container { 
-    height: 60%; 
+    height: 400px;
     margin: 0;
     padding: 0; 
 } 
@@ -100,13 +101,13 @@ h1 {
 
 .box1 .container { 
     background-color: rgb(230, 230, 250); 
-    margin: 40px; 
-    width: 600px; 
+    display: flex;
+    width: 60%;
+    margin: 20px;
     padding: 30px; 
     border: 2px solid rgb(131, 111, 255); 
     border-radius: 10px; 
     float: left; 
-    margin-left: 90px; 
 }  
 
 .titulo-box { 
@@ -122,12 +123,10 @@ h1 {
 
 .box2 { 
     float: left; 
-    padding: 40px; 
-    height: 270px; 
-    width: 400px; 
-    padding: 40px; 
+    display: flex;
+    width: 20%;
+    margin: auto;
     border-radius: 10px; 
-    margin-right: 40px; 
 } 
 
 .img-forum { 
@@ -177,6 +176,7 @@ h1 {
     float: left; 
     width: 150px; 
     margin: 30px; 
+    cursor: pointer;
 } 
 
 .logo-footer { 
