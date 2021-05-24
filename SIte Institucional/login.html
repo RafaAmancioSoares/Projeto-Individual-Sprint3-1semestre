@@ -7,6 +7,8 @@
     <title>Login || Quarta Capa</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/style-login.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
    
 </head>
 <body>
@@ -31,18 +33,31 @@
     <!-- FINAL HEADER -->
 
     <!--INICIO LOGIN-->
-    <div class="login">
+    <div class="pag-login">
         <div class="container">
-            <div class="titulo-login">
-                <h2>Login</h2>
-            </div>
+            <div class="box-login">
+                <h1>Login</h1>
 
-            <div class="texto-login">
-                <input placeholder="Insira seu email" id="in_email">
-                <br> <br>
-                <input placeholder="Insira sua senha" id="in_senha">
+
+
+                <form id="form_login" method="post" onsubmit="return entrar()">
+                    Usuário:
+                    <input type="text" class="input-padrao" name="login">
+                    <br><br>
+                    Senha:
+                    <input type="password" class="input-padrao" name="senha">
+                    <br><br>
+                    <button id="btn_entrar" class="btn-login">Entrar</button>
+                    
+                    <button id="btn_entrar" class="btn-login">Entrar</button>
+                </form>
+
+                <div class="extra">
+                    <div id="div_erro" class="msg_erro">
+                    </div>
+                    
+                </div>
             </div>
-            
         </div>
     </div>
     <!--FINAL LOGIN-->

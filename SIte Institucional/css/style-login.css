@@ -1,18 +1,29 @@
-.login { 
-    border-radius: 10px; 
-    border: 2px solid rgb(131, 111, 255); 
-    width: 500px; 
-} 
+.pag-login {
+    background-color: #ecf0f1;
+    text-align: center;
+    border-radius: 20px;
+}
 
-.login .container { 
-    display: flex; 
-    align-content: center; 
-    margin: auto; 
-} 
+.pag-login h1 {
+    margin-bottom: 40px;
+}
 
-.titulo-login { 
-} 
+.pag-login .input-padrao {
+    width: 50%;
+    display: inline-block;
+}
 
-.texto-login { 
-    width: 400px; 
-} 
+.box-login {
+    display: inline-block;
+    background-color: white;
+    box-shadow:  3px 3px 5px 2px #ccc;
+    padding: 20px;
+    border-radius: 20px;
+    width: 400px;
+}
+
+.pag-login .btn-green {
+    display: block;
+    float: none;
+    margin: auto;
+}
