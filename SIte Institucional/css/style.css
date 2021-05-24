@@ -4,55 +4,14 @@
     margin: 0; 
 } 
 
-body { 
+body, html { 
     display: flex; 
     flex-direction: column; 
     justify-content: space-between; 
     align-items: center; 
     height: 100vh; 
-} 
-
-/*CABEÇALHO*/ 
-
-.header { 
-    background-color: rgb(162, 181, 205); 
-    height: 100px; 
-    border-bottom: 4px solid rgb(131, 111, 255); 
-    width: 100%; 
-} 
-
-.logo-header { 
-    width: 20%; 
-    margin-left: 60px; 
-    float: left; 
-} 
-
-a { 
-    text-decoration: none; 
-} 
-
-.header ul { 
-    list-style-type: none; 
-    float: right; 
-    margin-top: 45px; 
-} 
-
-.header li { 
-    float: left; 
-    margin-left: 18px; 
-} 
-
-.header a { 
-    text-transform: uppercase; 
-    color: rgb(0, 0, 139); 
-} 
-
-.header a:hover { 
-    font-weight: bold; 
-} 
-
-.nav ul { 
-    width: 30%; 
+    background-color: rgb(238, 233, 233);
+    width: 100%;
 } 
 
 /*BANNER*/ 
@@ -98,16 +57,20 @@ h1 {
 } 
 
 /*BOX 1*/ 
+.box {
+    align-items: center;
+    justify-content: center;
+}
 
-.box1 .container { 
+.box1 { 
     background-color: rgb(230, 230, 250); 
-    display: flex;
-    width: 60%;
-    margin: 20px;
     padding: 30px; 
     border: 2px solid rgb(131, 111, 255); 
     border-radius: 10px; 
-    float: left; 
+    width: 45%;
+    margin: 30px;
+    display: flex;
+    float: left;
 }  
 
 .titulo-box { 
@@ -117,26 +80,31 @@ h1 {
 
 .texto-box { 
     color: rgb(155, 48, 255); 
+    padding-left: 30px;
 } 
 
 /*BOX 2*/ 
 
 .box2 { 
-    float: left; 
-    display: flex;
-    width: 20%;
-    margin: auto;
+    background-color: rgb(230, 230, 250); 
     border-radius: 10px; 
+    margin: 30px;
+    width: 40%;
+    display: flex;
+    float: left;
 } 
 
 .img-forum { 
     border: 2px solid rgb(131, 111, 255); 
     border-radius: 10px; 
-    float: left; 
-    padding: 20px; 
-    padding-top: 38px; 
-    padding-bottom: 38px; 
 } 
+
+.img-forum img {
+    width: 500px;
+    height: 228px;
+    padding: 38px;
+    margin: auto;
+}
 
 .box1 .box2 .border { 
     border-bottom: 30px solid rgb(131, 111, 255); 
@@ -146,7 +114,8 @@ h1 {
     background-color: rgb(131, 111, 255); 
     font-weight: bolder; 
     color: rgb(0, 0, 139); 
-    border-radius: 5px; 
+    border-radius: 10px; 
+    padding: 5px;
 }
 
 .btn a:hover { 
@@ -158,36 +127,3 @@ h1 {
     background-color: rgb(23, 10, 109); 
 } 
 
-/*FOOTER*/ 
-
-.footer .container { 
-    background-color: rgb(162, 181, 205); 
-    height: 100px; 
-    border-top: 4px solid rgb(131, 111, 255)/*rgb(255, 127, 0)*/; 
-    padding: 0; 
-    margin: 0; 
-} 
-
-.footer { 
-    width: 100%; 
-} 
-
-.redes-sociais { 
-    float: left; 
-    width: 150px; 
-    margin: 30px; 
-    cursor: pointer;
-} 
-
-.logo-footer { 
-    float: right; 
-    width: 200px; 
-    margin-right: 10px; 
-}  
-
-.direitos-footer { 
-    margin-left: 410px; 
-    font-size: 6px; 
-    float: left; 
-    margin-top: 70px; 
-} 
