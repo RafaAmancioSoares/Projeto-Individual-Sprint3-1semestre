@@ -5,7 +5,9 @@
 }
 
 .pag-login h1 {
-    margin-bottom: 40px;
+    margin: 20px;
+    color: rgb(85, 26, 139);
+    font-weight: bolder;
 }
 
 .pag-login .input-padrao {
@@ -22,8 +24,30 @@
     width: 400px;
 }
 
-.pag-login .btn-green {
+.pag-login  {
     display: block;
     float: none;
     margin: auto;
+}
+
+.btn-login {
+    background-color: gainsboro;
+    border: 1px solid grey;
+    padding: 2px;
+    width: 250px;
+    margin: 8px;
+}
+
+.btn-login:hover {
+    background-color: rgb(131, 111, 255);
+    border: 1px solid black;
+    color: white;
+    cursor: pointer;
+}
+
+.input-padrao {
+    background-color: rgb(155, 48, 255, 0.3);
+    border: 1px solid rgb(85, 26, 139);
+    color: purple;
+    padding: 5px;
 }
