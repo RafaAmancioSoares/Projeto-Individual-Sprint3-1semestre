@@ -42,16 +42,21 @@
                 
             </div>
             <br>
-            <div class="inputs-cadastro">
-                <input class="input" placeholder="Nome Completo">
-                <input class="input" placeholder="Usuário">
-                <input class="input" placeholder="Email">
-                <input class="input" placeholder="Telefone">
-                <input class="input" placeholder="Senha">
-                <input class="input" placeholder="Confirmação da senha">
-            </div>
+            <form id="form_cadastro" method="post" onsubmit="return cadastrar()" class="inputs-cadastro">
+                <div class="inputs">
+                    <input class="input" name="nome_completo" placeholder="Nome Completo">
+                    <br>
+                    <input class="input" name="usuario" placeholder="Usuário">
+                    <br>
+                    <input class="input" name="email" placeholder="Email">
+                    <br>
+                    <input class="input" name="telefone" placeholder="Telefone">
+                    <br>
+                    <input class="input" name="senha" placeholder="Senha">
+                </div>
 
-            <button class="button-cadastro">Cadastrar</button>
+               <button class="button-cadastro" onclick="cadastrar()">Cadastrar</button> 
+            </form>
         </div>
     </div>
     <!--FINAL CADASTRO-->
@@ -79,3 +84,44 @@
     <!-- FINAL FOOTER-->
 </body>
 </html>
+
+<script>
+
+    function cadastrar() {
+        aguardar();
+        var formulario = new URLSearchParams(new FormData(form_cadastro));
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            body: formulario
+        }).then(function (response) {
+            
+            if (response.ok) {
+
+                window.location.href='login.html';
+
+            } else {
+
+                console.log('Erro de cadastro!');
+                response.text().then(function (resposta) {
+                    div_erro.innerHTML = resposta;
+                });
+                finalizar_aguardar();
+            }
+        });
+
+        return false;
+    }
+
+    function aguardar() {
+        btn_entrar.disabled = true;
+        img_aguarde.style.display='block';
+        div_erro.style.display='none';
+    }
+
+    function finalizar_aguardar() {
+        btn_entrar.disabled = false;
+        img_aguarde.style.display='none';
+        div_erro.style.display='block';
+    }
+
+</script>
